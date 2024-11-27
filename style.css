@@ -1,0 +1,221 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html 
+{
+    scroll-behavior: smooth;
+}
+body 
+{
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #1d1a39;
+    background-image: linear-gradient(45deg, #1d1a39 0%, #451952 20%, #662549 33%, #ae445a 54%, #f39f5a 86%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.container 
+{
+    background: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    box-shadow: 0 10px 25px #4d1c37;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+.container h1 
+{
+    margin-bottom: 20px;
+    margin-top: 2%;
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.register-form 
+{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.fandlnames
+{
+    width: 230px;
+    margin-top: 3%;
+}
+.form-group 
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+label 
+{
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    margin-left: 6%;
+    margin-bottom: 2%;
+}
+.form-group input 
+{
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+.form-group input:focus 
+{
+    border-color: #ae445a;
+    outline: none;
+    box-shadow: 0 0 8px #ae445a;
+}
+.form-group i 
+{
+    color: black;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.btn 
+{
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #662549, #ae445a, #f39f5a);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 5px 15px #4d1c37;
+    margin-bottom: 2%;
+}
+.btn:hover 
+{
+    background: linear-gradient(225deg, #662549, #ae445a, #f39f5a);
+}
+.fandl
+{
+    display: flex;
+}
+.lname
+{
+    margin-left: 10px;
+}
+.namelabel
+{
+    margin-left: 10%;
+}
+.llabel
+{
+    margin-left: 15%;
+}
+@media (max-width: 768px) 
+{
+    .container 
+    {
+        padding: 20px;
+    }
+    .container h1
+    {
+        margin-top: 5%;
+    }
+    .form-group input 
+    {
+        font-size: 12px;
+    }
+    label 
+    {
+        font-size: 15px;
+    }
+    .btn
+    {
+        font-size: 15px;
+        margin-bottom: 5%;
+    }
+    .fandl
+    {
+        display: block;
+    }
+    .lname
+    {
+        margin-left: 0px;
+    }
+    .namelabel
+    {
+        margin-left: 25px;
+    }
+    .llabel
+    {
+        margin-left: 25px;
+    }
+}
+@media (max-width: 468px) 
+{
+    .container 
+    {
+        padding: 20px;
+    }
+    .form-group {
+        flex-direction: row;
+        align-items: center;
+    }
+    .form-group i 
+    {
+        margin-right: 10px;
+    }
+    .fandl
+    {
+        display: block;
+    }
+    .fandlnames
+    {
+        width: 45%;
+    }
+    .form-group input 
+    {
+        width: 100%;
+        font-size: 12px;
+    }
+    label 
+    {
+        font-size: 15px;
+        margin-left: 25px;
+    }
+    .btn 
+    {
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+    .container h1 
+    {
+        font-size: 24px;
+        margin-top: 5%;
+    }
+    .lname
+    {
+        margin-left: 0px;
+    }
+    .namelabel
+    {
+        margin-left: 25px;
+    }
+    .llabel
+    {
+        margin-left: 25px;
+    }
+}
